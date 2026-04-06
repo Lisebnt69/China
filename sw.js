@@ -3,13 +3,8 @@ const ASSETS = [
   './',
   './index.html',
   './manifest.webmanifest',
-  './assets/css/base.css',
-  './assets/css/features.css',
-  './assets/js/app-core.js',
-  './assets/js/map.js',
-  './assets/js/chat.js',
-  './assets/js/analytics.js',
-  './assets/js/features.js'
+  './icons/icon-192.png,
+  './icons/icon-512.png
 ];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(ASSETS)).then(() => self.skipWaiting()));
